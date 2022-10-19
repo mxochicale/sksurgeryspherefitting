@@ -52,6 +52,7 @@ setup(
 
     install_requires=[
         'numpy',
+        'spicy'
     ],
 
     entry_points={
