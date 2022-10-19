@@ -1,9 +1,10 @@
 # coding=utf-8
 """ Module for fitting a sphere to a list of 3D points """
 
-#scipy has a nice least squares optimisor
+# scipy has a nice least squares optimisor
 from scipy.optimize import leastsq
 import numpy
+
 
 def fit_sphere_least_squares(x_values, y_values, z_values, initial_parameters):
     """
@@ -20,7 +21,8 @@ def fit_sphere_least_squares(x_values, y_values, z_values, initial_parameters):
     return leastsq(_calculate_residual_sphere, initial_parameters,
                    args=(x_values, y_values, z_values))
 
-def _calculate_residual_sphere(parameters, x_values, y_values , z_values):
+
+def _calculate_residual_sphere(parameters, x_values, y_values, z_values):
     """
     Calculates the residual error for an x,y,z coordinates, fitted
     to a sphere with centre and radius defined by the parameters tuple
@@ -31,12 +33,11 @@ def _calculate_residual_sphere(parameters, x_values, y_values , z_values):
     :param: arrays containing the x,y, and z coordinates.
 
     """
-    #extract the parameters
+    # extract the parameters
     x_centre, y_centre, z_centre, radius = parameters
 
-    #use numpy's sqrt function here, which works by element on arrays
-    distance_from_centre = numpy.sqrt((x_values - x_centre)**2 +
-                                      (y_values - y_centre)**2 +
-                                      (z_values - z_centre)**2)
+    # use numpy's sqrt function here, which works by element on arrays
+    distance_from_centre = numpy.sqrt((x_values - x_centre) ** 2 +
+                                      (y_values - y_centre) ** 2 +
+                                      (z_values - z_centre) ** 2)
     return distance_from_centre - radius
-
