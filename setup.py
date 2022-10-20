@@ -52,7 +52,9 @@ setup(
 
     install_requires=[
         'numpy',
-        'spicy'
+        'spicy',
+        'vtk',
+        'scikit-surgeryvtk'
     ],
 
     entry_points={
