@@ -19,7 +19,7 @@ def run_demo(model_file_name, output=""):
                                                      z_values,
                                                      initial_parameters)
 
-    print("Result is {}".format(result))
+    print(f"Result is {result}")
 
     if output != "":
         sphere = vtk.vtkSphereSource()
