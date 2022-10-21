@@ -4,6 +4,7 @@
 
 from sksurgeryspherefitting.ui.sksurgeryspherefitting_demo import run_demo
 
+
 def test_fit_sphere_least_sqs_demo():
     """
     test the run demo entry point
