@@ -4,6 +4,7 @@
 
 from sksurgeryspherefitting.ui.sksurgeryspherefitting_demo import run_demo
 
+# Pytest style
 
 def test_fit_sphere_least_squares_demo():
     """
