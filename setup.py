@@ -53,7 +53,7 @@ setup(
     install_requires=[
         'numpy',
         'spicy',
-        'vtk=9.2.2',
+        'vtk==9.2.2',
         'scikit-surgeryvtk'
     ],
 
