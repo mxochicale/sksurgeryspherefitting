@@ -36,6 +36,27 @@ scikit-surgery-sphere-fitting is currently a demo project, which will add/multip
 
 Please explore the project structure, and implement your own functionality.
 
+sksurgeryspherefitting package
+==============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   sksurgeryspherefitting.algorithms
+   sksurgeryspherefitting.ui
+
+Module contents
+---------------
+
+.. automodule:: sksurgeryspherefitting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
 Developing
 ----------
 
