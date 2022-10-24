@@ -4,5 +4,5 @@
 # docs/requirements.rst
 numpy
 spicy
-vtk<9.0.0
+vtk<9.0.2
 scikit-surgeryvtk
