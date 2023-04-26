@@ -18,7 +18,7 @@ def main(args=None):
                         type=str,
                         help="Filename for vtk surface model")
 
-    # ADD OPTINAL ARGUMENTS
+    # ADD OPTIONAL ARGUMENTS
     parser.add_argument("-o", "--output",
                         required=False,
                         type=str,
