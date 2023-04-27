@@ -22,13 +22,13 @@ def run_demo(model_file_name, output=""):
     print(f"Result is {result}")
 
     if output != "":
-        sphere = vtk.vtkSphereSource()
+        sphere = vtk.vtkSphereSource() #pylint:disable=no-member
         sphere.SetCenter(result[0][0], result[0][1], result[0][2])
         sphere.SetRadius(result[0][3])
         sphere.SetThetaResolution(60)
         sphere.SetPhiResolution(60)
 
-        writer = vtk.vtkXMLPolyDataWriter()
+        writer = vtk.vtkXMLPolyDataWriter() #pylint:disable=no-member
         writer.SetFileName(output)
         writer.SetInputData(sphere.GetOutput())
         sphere.Update()
